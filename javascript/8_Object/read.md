@@ -80,3 +80,52 @@ const person = {
     return this.firstName + " " + this.lastName;
   }
 };
+
+
+____________________________________Object Method_______________________________________________
+
+
+// Copies properties from a source object to a target object
+1. Object.assign(target, source)
+
+// Creates an object from an existing object
+2. Object.create(object)
+
+// Returns an array of the key/value pairs of an object
+3. Object.entries(object)
+
+// Creates an object from a list of keys/values
+4. Object.fromEntries()
+
+// Returns an array of the keys of an object
+5. Object.keys(object)
+
+// Returns an array of the property values of an object
+6. Object.values(object)
+
+// Groups object elements according to a function
+7. Object.groupBy(object, callback)
+
+
+______________________________________________________________________________________________Object Protection Methods
+
+// Prevents re-assignment
+1. const car = {type:"Fiat", model:"500", color:"white"};
+
+// Prevents adding object properties
+2. Object.preventExtensions(object)
+
+// Returns true if properties can be added to an object
+3. Object.isExtensible(object)
+
+// Prevents adding and deleting object properties
+4. Object.seal(object)
+
+// Returns true if object is sealed
+5. Object.isSealed(object)
+
+// Prevents any changes to an object
+6. Object.freeze(object)
+
+// Returns true if object is frozen
+7. Object.isFrozen(object)
