@@ -1,10 +1,16 @@
 
+ console.log(typeof fruits)                                        object
+ console.log(Array.isArray(fruits))                                true
+ console.log(fruits instanceof Array)                              true
+
+
+
 ____________________________________________Basic Array Methods_________________________________________
 
 Array length
 Array toString()
 Array at()
-Array join()
+Array join(" ")
 Array pop()
 Array push()
 Array shift()
@@ -17,7 +23,7 @@ Array splice()
 Array toSpliced()
 
 
-_______________________________________________Array Search Methods____________________________________________
+__________________________________Array Search Methods____________________________________________
 
 Array indexOf()
 Array lastIndexOf()
@@ -28,7 +34,7 @@ Array findLast()
 Array findLastIndex()
 
 
-______________________________________________________Alphabetic Sort_______________________________________
+________________________________________________Alphabetic Sort_______________________________________
 
 ES2023 added the toSorted() method as a safe way to sort an array without altering the original array.
 
@@ -47,7 +53,7 @@ Array.sort((a,b)=>a-b)              assending order
 Array.sort((a,b)=>b-a)              decending order
 
 
-______________________________________________Array Iteration Methods________________________________________
+_______________________________________Array Iteration Methods________________________________________
 
 Array iteration methods operate on every array item.
 
@@ -74,40 +80,45 @@ Array Rest (...)
 
 
 🔁 Basic Iteration and Access
-Print all even numbers from an array.
 
-Sum all elements of an array.
+1. Print all even numbers from an array.
 
-Find the maximum number in an array.
+2. Sum all elements of an array.
 
-Find the index of a given element (e.g., 5) in an array.
+3. Find the maximum number in an array.
+
+4. Find the index of a given element (e.g., 5) in an array.
 
 🧪 Filtering and Mapping
-Filter all names longer than 5 characters from a string array.
 
-Map an array of numbers to their squares.
+5. Filter all names longer than 5 characters from a string array.
 
-Given an array of prices, add 18% GST to each and return the new array.
+6. Map an array of numbers to their squares.
 
-Convert an array of strings to uppercase using .map().
+7. Given an array of prices, add 18% GST to each and return the new array.
+
+8. Convert an array of strings to uppercase using .map().
 
 🔍 Search and Condition Checking
-Use .includes() to check if the array contains the word "apple".
 
-Use .some() to check if any number is greater than 100.
+9. check if the array contains the word "apple".
 
-Use .every() to check if all numbers are positive.
+10. check if any number is greater than 100.
 
-Use .find() to return the first string that starts with "A".
+11. check if all numbers are positive.
+
+12. return the first string that starts with "A".
 
 🔄 Modifying Arrays
-Reverse an array without using .reverse() (try with a loop).
 
-Use .sort() to sort an array of numbers in ascending order.
+13. Reverse an array without using .reverse() (try with a loop).
 
-Remove duplicates from an array using .filter() and .indexOf().
+14. sort an array of numbers in ascending order.
+
+15. Remove duplicates from an array.
 
 🧩 Chaining Methods
-From an array of student objects ({ name, score }), return names of students who scored more than 80.
 
-From an array of numbers, filter even numbers, double them, and sum the result.
+16. From an array of student objects ({ name, score }), return names of students who scored more than 80.
+
+17. From an array of numbers, filter even numbers, double them, and sum the result.
