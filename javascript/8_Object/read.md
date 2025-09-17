@@ -21,14 +21,6 @@ Sets are objects
 How to Define a JavaScript Object
 1. Using an Object Literal
 
-const person = {
-     firstName: "John",
-     lastName: "Doe",
-     age: 50,
-     eyeColor: "blue"
-}
-
-
 2. Using the new Keyword
 
 const person = new Object();
@@ -42,7 +34,7 @@ person.eyeColor = "blue";
 3. Using an Object Constructor
 
 
-_______________________________________Accessing Object Properties_____________________________________________
+______________________________________________-______Accessing Object Properties_____________________
 
 1. -> objectName.propertyName
 
@@ -54,19 +46,18 @@ console.log(person["family"]["brother"])
 
 
 
-______________________________________Adding New Properties_____________________________________________________
+______________________________________________________________Adding New Properties__________________
 
 person.nationality = "English";
 
-_____________________________________Deleting Properties______________________________________________________
+_______________________________________________________Deleting Properties___________________________
 
-1. ->delete person.age;
+1. -> delete person.age;
 
-2. ->delete person["age"];
+2. -> delete person["age"];
 
 
-_______________________________________Object Methods________________________________________________________
-
+_________________________________________________________Object Methods_______________________________
 
 Object methods are actions that can be performed on objects.
 
@@ -107,7 +98,7 @@ ____________________________________Object Method_______________________________
 7. Object.groupBy(object, callback)
 
 
-______________________________________________________________________________________________Object Protection Methods
+__________________________________________________________________________Object Protection Methods
 
 // Prevents re-assignment
 1. const car = {type:"Fiat", model:"500", color:"white"};
@@ -129,3 +120,62 @@ ________________________________________________________________________________
 
 // Returns true if object is frozen
 7. Object.isFrozen(object)
+
+
+______________________________________________________Imp____________________prototype Property
+
+1. The JavaScript prototype property allows you to add new properties to object constructors:
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+
+2. The JavaScript prototype property also allows you to add new methods to objects constructors:
+
+
+Person.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const obj = {
+  name: "niru",
+  age: 27,
+  
+}
+
+// output:
+// [['name', 'niru'], ['age', 27]];
+
+
+
+function print(num){ // 
+  if(num > 100){
+    return; // base
+  }
+  
+  
+  print(num + 1) // recursive call 100
+  
+  console.log(num) // work
+  
+}
+
+print(1) // 1

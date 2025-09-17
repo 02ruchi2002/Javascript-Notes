@@ -97,7 +97,7 @@ Array Rest (...)
 
 7. Given an array of prices, add 18% GST to each and return the new array.
 
-8. Convert an array of strings to uppercase using .map().
+8. Convert an array of strings to uppercase.
 
 🔍 Search and Condition Checking
 

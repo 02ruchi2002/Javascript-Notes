@@ -1,5 +1,8 @@
 
-___________________________Destructuring____________________ARRAY ,  OBJECT , STRING_____________________________________________
+__________________Destructuring____________________ARRAY ,  OBJECT , STRING________________________________
+
+
+Destructuring is a shorthand way to unpack values from arrays or properties from objects into variables.
 
 
 
@@ -17,10 +20,11 @@ for (const [key, value] of fruits) {
   text += key + " is " + value;
 }
 
-___________________________________________________________________________________________________QUESTIONS____________________________
+_________________________________________________________________________QUESTIONS____________________________
 
 
 🟢 Basic Destructuring Tasks
+
 1. Array Destructuring:
 const colors = ["red", "green", "blue"];
 // Task: Extract the first and second color into variables
@@ -29,6 +33,7 @@ const colors = ["red", "green", "blue"];
 2. Object Destructuring:
 const user = { name: "Alice", age: 25 };
 // Task: Destructure name and age into variables
+
 
 3. Function Parameter Destructuring:
 function greet(user) {
@@ -39,9 +44,11 @@ greet({ name: "Bob", age: 30 });
 
 🟡 Intermediate Tasks
 
+
 4. Destructuring with Renaming:
 const profile = { username: "john_doe", email: "john@example.com" };
 // Task: Destructure and rename 'username' to 'user'
+
 
 5. Default Values in Destructuring:
 const settings = { theme: "dark" };
