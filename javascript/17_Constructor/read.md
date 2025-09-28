@@ -30,7 +30,7 @@ class Car{
     }
 }
 
-const myCar = new Car("kia","2023","black")
+const myCar = new Car("kia","2023","bluesh-green")
 
 ______________________________________________________________Adding a Property to a Constructor
 
@@ -42,7 +42,7 @@ Person.prototype.changeName = function (name) {
 
 
 
-__________________________________________________________________________________________________Built-in JavaScript Constructors
+____________________________________________________________________________Built-in JavaScript Constructors
 
 new Object()   
 new Array()   

@@ -57,4 +57,3 @@ Falsy (convert to false):
 
 Truthy (convert to true):
 Everything else ("0", "false", [], {}, etc.)
-

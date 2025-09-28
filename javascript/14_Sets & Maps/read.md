@@ -1,7 +1,8 @@
 
 
 
-____________________________________________________Set_____________[Array]____________________________________________________
+______________________________________Set_____________[Array]____________________________________________________
+
 A JavaScript Set is a collection of unique values.
 
 Each value can only occur once in a Set.
@@ -40,7 +41,7 @@ letters.has("c")
 
 
 
-____________________________________________________Map_____________{Object}____________________________________________________
+______________________________________Map_____________{Object}____________________________________________________
 
 
 const fruits = new Map();
@@ -84,15 +85,15 @@ fruits.clear()
 
 
 
------------------------------------------------------ JavaScript Objects vs Maps --------------------------------------------------
+------------------------------------ JavaScript Objects vs Maps --------------------------------------------------
 
       Object	                                                                        Map
                                                                       
 Not directly iterable	                                                     Directly iterable
 Do not have a size property                                         	     Have a size property
 Keys must be Strings (or Symbols)                                   	     Keys can be any datatype
-Keys are not well ordered	                                                 Keys are ordered by insertion
-Have default keys	                                                         Do not have default keys
+Keys are not well ordered	                                               Keys are ordered by insertion
+Have default keys	                                                           Do not have default keys
 
 
 

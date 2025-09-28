@@ -1,10 +1,4 @@
 
-const user = {
-    name:"ruchi",
-    age:22,
-    friends:{
-        frnd1:"preeti",
-        frnd2:"bhawna",
-    }
-}
+let date = new Date()
 
+console.log(date.get())
