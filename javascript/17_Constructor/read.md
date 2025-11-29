@@ -42,7 +42,7 @@ Person.prototype.changeName = function (name) {
 
 
 
-____________________________________________________________________________Built-in JavaScript Constructors
+_______________________________________________________________Built-in JavaScript Constructors
 
 new Object()   
 new Array()   

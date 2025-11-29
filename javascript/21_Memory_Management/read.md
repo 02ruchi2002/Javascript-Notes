@@ -10,8 +10,8 @@ ____________🛠 Steps in Memory Management________________
 
 When variables, objects, arrays, or functions are created, the engine allocates memory.
 
-let num = 42;          // allocates space for a number
-let obj = { a: 1 };    // allocates space for an object
+let num = 42;          // allocates space for a num
+let obj = { a: 1 };    // allocates space for an obj
 
 
 2. Memory Usage

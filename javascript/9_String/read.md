@@ -1,7 +1,7 @@
 
 
 
-length	Returns the length of a string
+length	    Returns the length of a string
 
 at()	    Returns an indexed character from a string
 charAt()	Returns the character at a specified index (position)

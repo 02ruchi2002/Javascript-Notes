@@ -21,16 +21,19 @@ hello = () => "Hello World!";
 
 This works only if the function has only one statement.
 
-  _____________________________________________________Function Expressions_____________________________________
+  _________________________________________Function Expressions_____________________________________
 
 A JavaScript function can also be defined using an expression.
 
-A function expression can be stored in a variable:
+Functions defined using an expression are not hoisted.
+
+A function expression is stored in a variable:
 
 const x = function (a, b) {return a * b};
 
 
-________________________________________________Functions Can Be Used as Values_________________________________
+__________________________________Functions Can Be Used as Values_________________________________
+
 JavaScript functions can be used as values:
 
 Example
@@ -40,7 +43,7 @@ function myFunction(a, b) {
 
 let x = myFunction(4, 3);
 
-____________________________________________________________arguments________________________________________
+___________________________________________________arguments________________________________________
 
 function sumOfAll () {
     let sum = 0
@@ -53,7 +56,8 @@ function sumOfAll () {
 let result = sumOfAll(1,43,75,8,5,2,7)
 
 
-________________________________________________All Functions are Methods________________________________________
+__________________________________All Functions are Methods________________________________________
+
 In JavaScript all functions are object methods.
 
 

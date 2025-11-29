@@ -5,36 +5,40 @@
 
 
 
-____________________________________________Basic Array Methods_________________________________________
+________________________________________Basic Array Methods_________________________________________
 
-Array length
-Array toString()
-Array at()
-Array join(" ")
-Array pop()
-Array push()
-Array shift()
-Array unshift()
+ArrayName.length
+ArrayName.toString()
+Array.at()
+Array.join(" ")
+
+Array.pop()
+Array.push()
+Array.shift()
+Array.unshift()
+
 Array delete()
-Array concat()
-Array flat()
-Array slice()
-Array splice()
-Array toSpliced()
+Array.concat()
+Array.flat()
+
+Array.slice()
+Array.splice()
+
+Array.toSpliced()
 
 
 __________________________________Array Search Methods____________________________________________
 
-Array indexOf()
-Array lastIndexOf()
-Array includes()
-Array find()
-Array findIndex()
-Array findLast()
-Array findLastIndex()
+ArrayName.indexOf()  " " ,  44
+Array.lastIndexOf()
+Array.includes()     " "     55
+Array.find()
+Array.findIndex()
+Array.findLast()
+Array.findLastIndex()
 
 
-________________________________________________Alphabetic Sort_______________________________________
+______________________________________________Alphabetic Sort_______________________________________
 
 ES2023 added the toSorted() method as a safe way to sort an array without altering the original array.
 
@@ -43,29 +47,32 @@ The difference between toSorted() and sort() is that the first method creates a 
 
 Array.sort()            change original array
 Array.reverse()               \\
-Array.toSorted()         create new array 
-Array.toReversed()             \\
+ArrayName.toSorted()         create new array 
+ArrayName.toReversed()             \\
 
 
 _________________________________________________Numeric Sort_____________________________________
 
-Array.sort((a,b)=>a-b)              assending order
-Array.sort((a,b)=>b-a)              decending order
+ArrayName.sort((a,b)=>a-b)              assending order
+ArrayName.sort((a,b)=>b-a)              decending order
 
 
-_______________________________________Array Iteration Methods________________________________________
+_____________________________________Array Iteration Methods________________________________________
 
 Array iteration methods operate on every array item.
 
-Array forEach
-Array map()
-Array filter()
-Array reduce()
-Array every()
-Array some()
-Array from()
-Array keys()
-Array entries()
+ArrayName.forEach()
+
+Array.map()
+Array.filter()
+Array.reduce()
+
+Array.every()
+Array.some()
+Array.from()
+Array.keys()
+Array.entries()
+
 Array Spread (...)
 Array Rest (...)
 

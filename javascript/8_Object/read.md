@@ -18,7 +18,8 @@ Maps are objects
 Sets are objects
 
 
-How to Define a JavaScript Object
+__________________________________________________How to Define a JavaScript Object ?
+
 1. Using an Object Literal
 
 2. Using the new Keyword
@@ -34,7 +35,7 @@ person.eyeColor = "blue";
 3. Using an Object Constructor
 
 
-______________________________________________-______Accessing Object Properties_____________________
+_________________________________________________Accessing Object Properties_____________________
 
 1. -> objectName.propertyName
 
@@ -46,18 +47,18 @@ console.log(person["family"]["brother"])
 
 
 
-______________________________________________________________Adding New Properties__________________
+___________________________________________________________Adding New Properties__________________
 
 person.nationality = "English";
 
-_______________________________________________________Deleting Properties___________________________
+_____________________________________________________Deleting Properties___________________________
 
 1. -> delete person.age;
 
 2. -> delete person["age"];
 
 
-_________________________________________________________Object Methods_______________________________
+_______________________________________________________Object Methods_______________________________
 
 Object methods are actions that can be performed on objects.
 
