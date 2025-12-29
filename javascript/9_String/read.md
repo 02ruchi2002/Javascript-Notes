@@ -1,6 +1,12 @@
 
 
 
+------------All string methods return a new value.
+
+-------------They do not change the original string.
+
+
+
 length	    Returns the length of a string
 
 at()	    Returns an indexed character from a string
@@ -48,6 +54,13 @@ trimStart()	Returns a string with removed whitespaces from the start
 valueOf()	Returns the primitive value of a string or a string object
 
 
-All string methods return a new value.
 
-They do not change the original string.
+--->  In JavaScript, there’s no built-in reverse() method for strings
+
+split("") → converts string to array of characters
+
+reverse() → reverses the array
+
+join("") → converts array back to string
+
+ const reversed = str.split("").reverse().join("");

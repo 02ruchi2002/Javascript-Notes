@@ -2,10 +2,6 @@
 
 JavaScript is the programming language of the web.
 
-It can update and change both HTML and CSS.
-
-It can calculate, manipulate and validate data.
-
 [1] JavaScript Can Change HTML Content
 
 document.getElementById("demo").innerHTML = "Hello JavaScript";

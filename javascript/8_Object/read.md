@@ -180,3 +180,21 @@ function print(num){ //
 }
 
 print(1) // 1
+
+
+
+
+
+Q. Check for state key, if exists change value as “delhi” other create key state and put some value
+
+1. way to do =>
+
+ if("state" in obj){
+     obj.state = "delhi"
+ }else{
+     obj.state = "kolkata"
+ }
+
+2. way  to do =>
+
+obj.state = obj.state ? "bihar" : "kolkata";

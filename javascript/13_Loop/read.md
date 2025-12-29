@@ -3,7 +3,7 @@ Loops are handy, if you want to run the same code over and over again, each time
 
 Often this is the case when working with arrays:
 
-______________________________________________________Different Kinds of Loops________________________________________________________
+_________________________________________________Different Kinds of Loops________________________________________________________
 
 1. for - loops through a block of code a number of times
 
