@@ -178,3 +178,30 @@ for(let i=1;i<=num; i++){
     no++
   }
 }
+
+// _________________________[ 9 ]______________________________
+
+
+let n = 5;
+let pattern = "";
+
+for (let i = 1; i <= n; i++) {
+
+  // spaces
+  for (let s = 1; s <= n - i; s++) {
+    pattern += " ";
+  }
+
+  // numbers
+  for (let j = 1; j <= i; j++) {
+    if (j === 1 || j === i) {
+      pattern += "1 ";
+    } else {
+      pattern += (i + j) % 2 + " ";
+    }
+  }
+
+  pattern += "\n";
+}
+
+console.log(pattern);

@@ -22,3 +22,4 @@ If x is zero, it returns 0
 Math.min()
 Math.max()
 Math.random()
+Math.abs()   abs = absolute difference 
