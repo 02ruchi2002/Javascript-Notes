@@ -1,12 +1,12 @@
 
 
-___________________________________ STAR PATTERN   *_________________________________________________________________
+___________________________________  STAR PATTERN   _________________________________________________________________
 
 In Star Pattern Always count rows first so the first loop while run until that no 
 and then second loop run of current value of parent loop 
 
 
-1. 
+1.      row = 5
 
 *
 **
@@ -15,7 +15,7 @@ and then second loop run of current value of parent loop
 *****
 
 
-2.  this pattern with for loop and while loop
+2.  this pattern with for loop and while loop     row = 5 
 
 *****
 ****
@@ -29,7 +29,7 @@ and then second loop run of current value of parent loop
 *****
 
 
-3. Piramid
+3. Piramid                              row = 5
 
         *
       * * *
@@ -38,7 +38,7 @@ and then second loop run of current value of parent loop
 * * * * * * * * *
 
 
-4. 
+4.                                      row = 5
 
 *    *
 **   **
@@ -47,7 +47,7 @@ and then second loop run of current value of parent loop
 **********
 
 
-5. Print a hollow square 
+5. Print a hollow square            
 
 ************
 *          *
@@ -81,8 +81,15 @@ _____________________________________ NUMRICAL PATTERN _________________________
  11 12 13 14 15
 
 
+9.              
+ 1
+ 22
+ 333
+ 4444
+ 55555
+
  
-9. Print 0-1 triangle
+10. Print 0-1 triangle
 
       1
      0 1

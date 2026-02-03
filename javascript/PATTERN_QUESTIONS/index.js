@@ -52,7 +52,6 @@
 //     pattern += "\n"
 //     }
 //     }
-
 //   }
 // }
 
@@ -179,7 +178,41 @@ for(let i=1;i<=num; i++){
   }
 }
 
+// -----------------------------------------------------------------
+
+// let row = 5
+
+// let pattern = "";
+
+// let  no = 1
+
+// for(let i=1;i<=row;i++){
+//   for(let j=1;j<=i;j++){
+//      pattern = pattern + no + " "
+//      no = no + 1
+//   }
+//   pattern += "\n"
+// }
+
+// console.log(pattern)
+
 // _________________________[ 9 ]______________________________
+
+
+// let row = 5;
+
+// let pattern = ""
+
+// for(let i=1;i<=row;i++){
+//   for(let j=1;j<=i;j++){
+//    pattern += i
+//   }
+//    pattern  += "\n"
+// }
+
+// console.log(pattern)
+
+// _________________________[ 10 ]______________________________
 
 
 let n = 5;
