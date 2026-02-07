@@ -139,3 +139,37 @@
 // }
 
 // console.log(freq)
+
+
+// =========================================================================================================================
+
+// Write a program to find the missing number that when add to it becomes divisible by 69.
+
+// Input: 69
+
+// Output: 0
+
+// Explanation: If we add 69+0 it can become divisible by 69.
+
+// Input:123
+
+// Output:15
+
+// Explanation: If we subtract 123+15 = 138 which is divisible by 69.
+
+
+function isDivisible(num) {
+  for(let i=0;i<=10;i++){
+    let x = 69*i - num
+    if(x>0){
+      return x;
+    }
+  }
+}
+
+let result = isDivisible(100)
+
+console.log(result)
+
+
+// =========================================================================================================================

@@ -371,3 +371,105 @@
 // let result = positive.concat(negative)
 
 // console.log(result)
+
+
+
+// _______________________ Return True if there is a duplicate no in array if not return false _________________________________
+
+
+// const containsDuplicate = (nums) => {
+//         let single = []
+//         let duplicates = []
+//         for (let item of nums) {
+//             if (!single.includes(item)) {
+//             single.push(item)
+//             } else {
+//             duplicates.push(item)
+//         }
+//         }
+//         if (duplicates.length > 0) {
+//             return true;
+//         } else {
+//             return false;
+//        }
+//     };
+    
+
+
+// ______________________[1]_________________ Concatenation of Array_____________________________________________________________
+
+
+
+// let arr = [1,2,3]   // output [1,2,3,1,2,3]
+
+// let nums = []
+
+// while(nums.length != arr.length*2){
+//   for(let i=0;i<arr.length;i++){
+//     nums.push(arr[i])
+//   }
+// }
+
+// console.log(nums)
+
+// -----------------------------------------------
+
+// var getConcatenation = function(nums) {
+//     let result = nums.concat(nums)
+//     return result
+// };
+
+// -----------------------------------------------
+
+// ________________________[2]_______________ Suffle the Array___________________________________________________________________
+
+
+[1,1,2,2]        // output [1,2,1,2]
+[2,5,1,4,1,7]    // output [2,3,5,4,1,7]
+
+// Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+// Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
+
+function shuffle(nums, n) {
+    let result  = []
+    let  arr1 = nums.slice(0,n)
+    let  arr2 = nums.slice(n,nums.length)
+    
+    console.log(arr1)
+    console.log(arr2)
+    
+    for(let i=0;i<=n-1;i++){
+        result.push(arr1[i],arr2[i])
+    }
+    return result;
+};
+
+let answer = shuffle([1,1,2,2],2)
+
+console.log(answer)
+
+
+// ____________X____________[3]_____________  Kids With the Greatest Number of Candies ____________________________________________
+
+
+function kidsWithCandies(candies, extraCandies) {
+    let result = []
+    let curr = 0;
+    for(let i=0;i<candies.length;i++){
+        if(candies[i] + extraCandies > curr){
+            curr = candies[i] + extraCandies
+            result.push(true)
+        }else{
+            curr = candies[i] + extraCandies
+            result.push(false)
+        }
+    }
+     return result;
+};
+
+
+let ans = kidsWithCandies([2,3,5,1,3],3)
+
+
+// __________________________________________ Binary Search  ____________________________________________________________________
+
