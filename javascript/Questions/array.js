@@ -1,3 +1,10 @@
+
+
+
+//    Math.floor()
+//    Math.abs()
+
+
 // ___________________________________ index of items == target value __________________________________________________________
 
 // let arr = [1,1,2,2,3,4,6,10]
@@ -38,10 +45,8 @@
 // console.log(unique)
 // console.log(duplicate)
 
-// _________________________________________________________________________________________________________________
+// ________________________________________ most frequent elements in array __________________________________________________
 
-
-// Q3. Find most frequent elements in array
 
 // arr = [1,2,3,1,2,4,3,3,2,10] output = [2,3]
 
@@ -71,29 +76,35 @@
 // console.log(maxCount)
 // console.log(maxCountElement)
 
+//---------------------------------------------------------------------
 
-// ______________________________________________ Palindrome ____________________________________________________________________
 
-// const str = "abcba"
-// const str = "pglihgp"
-// const str = "hellolleh"
-
-// let result = ""
-
-// let i = 0
-// let j = str.length-1
-// while(i<j){
-//     if(str[i] == str[j]){
-//         i++
-//         j--
-//     }else if(str[i] != str[j]){
-//         result = "not palindome"
-//         break;
+// const arrQuestion = (arr) =>  {
+//   let result = []
+//   let map = new Map()
+//   for(let item of arr){
+//     if(!map.has(item)){
+//       map.set(item,1)
+//     }else{
+//       let value = map.get(item)
+//       map.set(item,value+1)
 //     }
-//     result = "palindrome"
+//   }
+//   let max = 0;
+//   let num = null;
+//   for(let [key,value] of map){
+//     if(value > max){
+//       max = value
+//       num = key
+//     }
+//   }
+//   result.push(num)
+//   return result
 // }
 
-// console.log(result)
+// let result = arrQuestion( [1,2,3,1,2,4,3,3,2,10])
+
+
 
 // ______________________________________ Second largest ________________________________________________________________________ 
 
@@ -163,6 +174,7 @@
 
 // _______________________________________________Flat arr__________________________________________________________________
 
+
 // let nums = [1,2,[3,4,[5,6],7],8]
 
 // let result = []
@@ -198,60 +210,6 @@
 //   } 
 // }
 
-// __________________________________________ Bubble sort ________________________________________________________________
-
-
-// let arr = [4,3,2,5,1]
-
-// for(let i=0;i<arr.length;i++){
-// for(let j=i+1;j<arr.length;j++){
-//   if(arr[j]>arr[i]){
-//     let temp = arr[i]
-//     arr[i] = arr[j]
-//     arr[j] = temp
-//   }
-// }
-// }
-
-// console.log(arr)
-
-
-// __________________________________________ Insertion sort ________________________________________________________________
-
-// let arr = [4,3,2,5,1]
-
-// for(let i=1;i<arr.length;i++){
-//   let curr = arr[i]
-//   let j = i-1
-//   while(j >= 0 && curr<arr[j]){
-//     arr[j+1] = arr[j]
-//     j--
-//   }
-//   arr[j+1] = curr
-  
-// }
-
-// console.log(arr)
-
-// __________________________________________ Selection sort ________________________________________________________________
-
-
-// let arr = [4,3,2,5,1]
-
-// for(let i=0;i<arr.length;i++){
-//   let min = i;
-//   for(let j=i+1;j<arr.length;j++){
-//     if(arr[min] < arr[j]){
-//       min = j
-//     }
-//   }
-//   let temp = arr[i]
-//   arr[i] = arr[min]
-//   arr[min] = temp
-  
-// }
-
-// console.log(arr)
 
 // __________________________________________ Max Difference bettween arr of item ________________________________________________________________
 
@@ -265,6 +223,8 @@
 // }
 
 // console.log(maxDiff)
+
+
 
 // _______________________________________ Maximum number from both Diagonals ___________________________________________________
 
@@ -308,7 +268,7 @@
 // console.log(max1)
 // console.log(max2)
 
-// _______________________________________ Rotate Array  ___________________________________________________
+// ______________________________________________  Rotate Array   ___________________________________________________
 
 // const  rotate =  (nums, k) => {
 //     if (k >= nums.length) {
@@ -336,6 +296,23 @@
 // _______________________________________ Disappearing Elments  ___________________________________________________
 
 
+// let  arr = [4,3,2,7,8,2,3,1,3,1]    // Output [5,6,9,10]
+
+// let start = 1;
+// let result = []
+
+// while(start<=arr.length){
+//   if(!arr.includes(start)){
+//     result.push(start)
+//   }
+//    start++
+// }
+
+// console.log(result)
+
+
+// ----------------------------------------------------------
+
 // let arr = [4,3,2,7,8,2,3,1]     // Output [5,6]
 
 // let start = 1;
@@ -352,6 +329,7 @@
 // }
 
 // console.log(result)
+
 
 // _______________________________________ Failed Students at end  ___________________________________________________
 
@@ -419,7 +397,8 @@
 //     return result
 // };
 
-// -----------------------------------------------
+
+
 
 // ________________________[2]_______________ Suffle the Array___________________________________________________________________
 
@@ -430,45 +409,23 @@
 // Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 // Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
 
-function shuffle(nums, n) {
-    let result  = []
-    let  arr1 = nums.slice(0,n)
-    let  arr2 = nums.slice(n,nums.length)
+// function shuffle(nums, n) {
+//     let result  = []
+//     let  arr1 = nums.slice(0,n)
+//     let  arr2 = nums.slice(n,nums.length)
     
-    console.log(arr1)
-    console.log(arr2)
+//     console.log(arr1)
+//     console.log(arr2)
     
-    for(let i=0;i<=n-1;i++){
-        result.push(arr1[i],arr2[i])
-    }
-    return result;
-};
+//     for(let i=0;i<=n-1;i++){
+//         result.push(arr1[i],arr2[i])
+//     }
+//     return result;
+// };
 
-let answer = shuffle([1,1,2,2],2)
+// let answer = shuffle([1,1,2,2],2)
 
-console.log(answer)
-
-
-// ____________X____________[3]_____________  Kids With the Greatest Number of Candies ____________________________________________
-
-
-function kidsWithCandies(candies, extraCandies) {
-    let result = []
-    let curr = 0;
-    for(let i=0;i<candies.length;i++){
-        if(candies[i] + extraCandies > curr){
-            curr = candies[i] + extraCandies
-            result.push(true)
-        }else{
-            curr = candies[i] + extraCandies
-            result.push(false)
-        }
-    }
-     return result;
-};
-
-
-let ans = kidsWithCandies([2,3,5,1,3],3)
+// console.log(answer)
 
 
 // __________________________________________ Binary Search  ____________________________________________________________________

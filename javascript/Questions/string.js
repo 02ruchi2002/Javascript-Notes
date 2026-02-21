@@ -104,6 +104,107 @@
 // console.log(result.trim()); // I ma redoc
 
 
+//____________________________________________ palindrome or not ____________________________________________________________
+
+
+// const checkIsPalindrome = (str) =>{
+//   let reverse = str.split("").reverse().join("")
+//   if(reverse == str){
+//     return true;
+//   }else{
+//     return false
+//   }
+// }
+
+
+// let result = checkIsPalindrome("ruchihcur")
+
+// console.log(result)
+
+// ------------------------------------------------
+
+// var isValid = function(s) {
+//     let i = 0;
+//     let j = s.length - 1
+//     while (i < j) {
+//         if (s[i] === s[j]) {
+//             i++
+//             j--
+//         } else {
+//             return false;
+//         }
+//         return true
+//     }
+// };
+
+
+// ------------------------------------------------
+
+
+// const str = "abcba"
+// const str = "pglihgp"
+// const str = "hellolleh"
+
+// let result = ""
+
+// let i = 0
+// let j = str.length-1
+// while(i<j){
+//     if(str[i] == str[j]){
+//         i++
+//         j--
+//     }else if(str[i] != str[j]){
+//         result = "not palindome"
+//         break;
+//     }
+//     result = "palindrome"
+// }
+
+// console.log(result)
+
+
+//____________________________________________  Maximum Numbers of Words  ________________________________________________________
+
+// let sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+
+//                                                                             Time Complexity = O(n × m)
+
+// const maxNoOfWord = (arr) => {
+//   let max = 0;
+//  for(let item of arr){
+//    let split  = item.split(" ")
+//    if(split.length > max){
+//      max = split.length
+//    }
+//  }
+//  return count;
+// }
+
+// let result = maxNoOfWord(sentences)
+
+// console.log(result)
+
+
+// --------------------------------------                Time Complexity = O(n × m)   
+
+// var mostWordsFound = function (sentences) {
+//     let max = 0;
+//     for (let item of sentences) {
+//         let sen = item.split(",")
+//         for (let word of sen) {
+//             let count = word.split(" ")
+//             if (count.length > max) {
+//                 max = count.length
+//             }
+//         }
+//     }
+//     return max;
+   
+// };
+
+
+
+
 //____________________________________________ Minimum requirement for palindrome __________________________________________________
 
 //  let word = "hello"
@@ -141,7 +242,35 @@
 // console.log(freq)
 
 
-// =========================================================================================================================
+//____________________________________________ Extracting Numbers ______________________________________________________________
+
+// str = "abc334v44d"
+
+// Output: [334, 44]
+
+
+
+var extract_number = function(s) {
+    let result = []
+    let num = ""
+    for (let i = 0; i < s.length; i++){
+        if (s.charCodeAt(i) >= 48 && s.charCodeAt(i) <= 57) {
+            num += s[i]
+        } else {
+            if (num.length > 0) {
+                result.push(Number(num));
+                num = "";
+            }
+        }
+    }
+    if (num.length > 0) {
+        result.push(Number(num));
+    }
+    return result
+};
+
+
+// =============================================================================================================================
 
 // Write a program to find the missing number that when add to it becomes divisible by 69.
 
@@ -172,4 +301,34 @@ let result = isDivisible(100)
 console.log(result)
 
 
-// =========================================================================================================================
+
+
+//____________________________________________ Reverse Words in a String ________________________________________________________
+
+// Input: s = "the sky is blue"
+// Output: "blue is sky the"
+ 
+                                                              // trim = O(n)
+                                                              // split = O(n)
+                                                              // for loop = O(n)
+                                                              // string concatenation = result += something =  O(n²)
+
+var reverseWords = function(s) {                                  
+ let arr = s.trim().split(/\s+/)                                                  
+ let result = ""                                                                   
+ for(let i=arr.length-1;i>=0;i--){                                                  
+   result += arr[i]
+   if(i != 0){
+    result += " "
+   }
+ }
+ return result;
+ 
+};
+
+
+// ---------------------------------------- Optimized Time Complexity   O(n) ----------------------
+
+var reverseWords = function(s) {
+  return s.trim().split(/\s+/).reverse().join(" ");
+};

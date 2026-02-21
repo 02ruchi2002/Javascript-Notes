@@ -12,8 +12,10 @@ Strings cannot be changed, only replaced.
 
 length	        Returns the length of a string
 at()	        Returns an indexed character from a string
-charCodeAt()    Returns the code of the character at a specified index in a string
 
+
+charCodeAt()    Returns the code of the character at a specified index in a string
+--------------                                                  ------
 
 concat()	    Returns two or more joined strings
 
@@ -21,6 +23,11 @@ concat()	    Returns two or more joined strings
 includes()   	Returns if a string contains a specified value
 indexOf()	    Returns the index (position) of the first occurrence of a value in a string
 lastIndexOf()	Returns the index (position) of the last occurrence of a value in a string
+
+
+------------------------------------------------------- Convert  string into array ----------------------------------------------
+
+split("")       converts string to array of characters
 
 
 
@@ -79,4 +86,8 @@ split()	Splits a string into an array of substrings
 
 3] join("") → converts array back to string
 
+let str = "the sky is blue"
+
  const reversed = str.split("").reverse().join("");
+
+output = "blue is sky the"

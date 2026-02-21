@@ -15,27 +15,32 @@ const letters = new Set(["z"]);
 
 _________Method___________
 
-0. letters.size
+1. letters.size
 
-1. add(value)
+
+2. add(value)
 
 letters.add("a")
 letters.add("b")
 letters.add("c")
 letters.add("d")
 
-2. delete(value)
+
+3. delete(value)
 
 letters.delete("b")
 
-3. has(value)        true/false
+
+4. has(value)        true/false
 
 letters.has("c")
 
 
-4. clear()	Removes all values
+5. clear()	Removes all values
+
 
 6. keys()
+
 
 7. values()
 
@@ -49,39 +54,45 @@ const fruits = new Map();
 
 _________Method_________
 
-0. fruites.size
+1. fruites.size
  
-1. set()
+2. set()
 
 fruits.set("mango",100)
 fruits.set("kiwi",400)
 fruits.set("litchi",800)
 fruits.set("apple",500)
 
-2. get()
+3. get()
 
 fruits.get("apples");    // Returns 500
 
 
-2. delete(value)
+4. delete(value)
 
 fruits.delete("apple")
 
-3. has(value)        true/false
+5. has(value)        true/false
 
 fruits.has("orange")
 
 
-4. clear()	Removes all values
+6. clear()	Removes all values
 
 fruits.clear()
 
 
-5. fruits.forEach((value, key) => console.log(key, value))
+7. fruits.forEach((value, key) => console.log(key, value))
 
-6. keys()
 
-7. values()
+   fruits.for(let [key,value] of fruits){
+
+   }
+   
+
+8. keys()
+
+9. values()
 
 
 
