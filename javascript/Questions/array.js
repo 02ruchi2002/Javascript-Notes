@@ -428,5 +428,80 @@
 // console.log(answer)
 
 
+// __________________________________________Find Missing and Duplicates _____________________________________________________________
+
+
+// let arr = [3,2,1,3,2,6]
+
+// let result = [];
+// let single = [];
+
+// let count = 1;
+
+// for(let i=0;i<arr.length;i++){
+//     if(!arr.includes(count) || single.includes(arr[i])){
+//         result.push(arr[i],count)
+//     }
+//     single.push(arr[i])
+//     count++
+// }
+
+// console.log(result)
+
+
+// __________________________________________ Merge Sorted Array  ____________________________________________________________________
+
+//  nums1 = [1,2,3,0,0,0]
+//  m = 3                               m is a length of nums1
+//  nums2 = [2,5,6]
+//  n = 3                               n is length of numse2
+// Output: [1,2,2,3,5,6]
+
+// -------------------------------------------------------------------   Brute Force Method
+
+
+// var merge = function(nums1, m, nums2, n) {
+
+//     // Step 1: Copy nums2 elements
+//     for (let i = 0; i < n; i++) {
+//         nums1[m + i] = nums2[i];
+//     }
+
+//     // Step 2: Sort entire array
+//     nums1.sort((a, b) => a - b);
+
+//     return nums1;
+// };
+
+
+// ----------------------------------------------------
+
+// var merge = function(nums1, m, nums2, n) {
+//     let i = m - 1;
+//     let j = n - 1;
+//     let k = m + n - 1;
+
+//     while (i >= 0 && j >= 0) {
+//         if (nums1[i] > nums2[j]) {
+//             nums1[k] = nums1[i];
+//             i--;
+//         } else {
+//             nums1[k] = nums2[j];
+//             j--;
+//         }
+//         k--;
+//     }
+
+//     // If nums2 still has elements left
+//     while (j >= 0) {
+//         nums1[k] = nums2[j];
+//         j--;
+//         k--;
+//     }
+
+//     return nums1;
+// };
+
 // __________________________________________ Binary Search  ____________________________________________________________________
+
 

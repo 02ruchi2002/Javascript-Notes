@@ -314,7 +314,7 @@ console.log(result)
                                                               // string concatenation = result += something =  O(n²)
 
 var reverseWords = function(s) {                                  
- let arr = s.trim().split(/\s+/)                                                  
+ let arr = s.trim().split(/\s+/)                                     //  Regex                                             
  let result = ""                                                                   
  for(let i=arr.length-1;i>=0;i--){                                                  
    result += arr[i]
@@ -329,6 +329,41 @@ var reverseWords = function(s) {
 
 // ---------------------------------------- Optimized Time Complexity   O(n) ----------------------
 
+
 var reverseWords = function(s) {
   return s.trim().split(/\s+/).reverse().join(" ");
 };
+
+
+//______________________________________________________________  Using replace() (Simple Way)
+
+
+// let s = "aman,aplan,acanal:panama";
+
+// let result = s.replace(/[,:.\s]/g, "");
+
+// console.log(result);
+
+
+//______________________________________________________________ Without Regex (Manual Way)
+
+
+// If you don’t want to use regex:
+
+// let s = "aman,aplan,acanal:panama";
+// let result = "";
+
+// for (let i = 0; i < s.length; i++) {
+//     if (s[i] !== ',' && s[i] !== ':' && s[i] !== '.') {
+//         result += s[i];
+//     }
+// }
+
+// console.log(result);
+
+
+// ____________________________________________________________🚀 If You Want to Remove All Non-Alphanumeric Characters
+
+// For palindrome problems, better approach:
+
+// let result = s.replace(/[^a-zA-Z0-9]/g, "");

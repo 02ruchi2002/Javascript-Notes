@@ -522,6 +522,44 @@ console.log(absoluteDiff)
 
 _________________________________________________ Transpose a matrix _____________________________________________________________
 
+const mat = [[1,2,3], [4,5,6]]
+
+const m = mat.length; // rows - 2
+const n = mat[0].length; // cols - 3
+
+const rows = []
+
+for(let i = 0; i<n; i++){ // creating rows - 3 (using cols length - 3)
+  const cols = []
+  for(let j = 0; j<m; j++){ // creating cols (using rows length - 2)
+    cols.push(mat[j][i]);
+  }
+  rows.push(cols)
+}
+
+console.log(rows)
+
+---------------------------------------------------------------------  
+
+matrix = [[1,2,3],[4,5,6]]         row = 2   colum = 3
+
+output = [[1,4],[2,5],[3,6]]      row = 3    colum = 2
+
+var transpose = function(matrix) {
+    let rows = matrix[0].length;                                                  // it is a colum of matrix we change into row 
+    let cols = matrix.length;                                                    // it is a row of matrix we change into column 
+    let transposedArr = Array.from({ length: rows }, () => new Array(cols).fill(0));
+    for(let i=0;i<matrix.length;i++){
+        for(let j=0;j<matrix[0].length;j++){
+           transposedArr[j][i] = matrix[i][j]
+        }
+    }
+    return transposedArr;
+};
+
+ 
+
+---------------------------------------------------  this logic is use full where row == colum
 
 let arr = [[2,4,-1],[-10,5,11],[18,-7,6]]
 
