@@ -123,7 +123,7 @@ __________________________________________________________________________Object
 7. Object.isFrozen(object)
 
 
-______________________________________________________Imp____________________prototype Property
+______________________________________________________ Important ____________________ prototype Property
 
 1. The JavaScript prototype property allows you to add new properties to object constructors:
 

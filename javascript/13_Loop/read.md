@@ -11,7 +11,7 @@ _________________________________________________Different Kinds of Loops_______
         array[i]
    }
 
-   for(let i=array.length-1; i>=0; i++){
+   for(let i=array.length-1; i>=0; i--){
          array[i]
    }
    

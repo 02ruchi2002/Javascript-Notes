@@ -23,3 +23,4 @@ Math.min()
 Math.max()
 Math.random()
 Math.abs()   abs = absolute difference 
+Math.sqrt(n)    square root of a number

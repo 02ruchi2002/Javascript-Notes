@@ -41,6 +41,29 @@ Person.prototype.changeName = function (name) {
 
 
 
+______________________________________________________ Important ____________________ prototype Property
+
+1. The JavaScript prototype property allows you to add new properties to object constructors:
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+
+2. The JavaScript prototype property also allows you to add new methods to objects constructors:
+
+
+Person.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+
+
+
 _______________________________________________________________Built-in JavaScript Constructors
 
 new Object()   

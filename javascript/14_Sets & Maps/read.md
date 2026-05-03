@@ -85,7 +85,7 @@ fruits.clear()
 7. fruits.forEach((value, key) => console.log(key, value))
 
 
-   fruits.for(let [key,value] of fruits){
+   for(let [key,value] of fruits){
 
    }
    

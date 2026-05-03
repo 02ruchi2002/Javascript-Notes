@@ -238,3 +238,25 @@ for (let i = 1; i <= n; i++) {
 }
 
 console.log(pattern);
+
+
+// _________________________[ 11 ]______________________________
+
+
+// let pattern = ""
+
+// let num = 5;
+
+// let i = num;
+
+// while(i>=1){
+//   let j = 1;
+//   while(j<=i){
+//     pattern += j
+//     j++
+//   }
+//    pattern += "\n"
+//   i--
+// }
+
+// console.log(pattern)

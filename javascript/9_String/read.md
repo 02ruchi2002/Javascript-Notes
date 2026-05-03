@@ -25,9 +25,12 @@ indexOf()	    Returns the index (position) of the first occurrence of a value in
 lastIndexOf()	Returns the index (position) of the last occurrence of a value in a string
 
 
-------------------------------------------------------- Convert  string into array ----------------------------------------------
+-------------------------------------------- Convert string into array & array into string -------------------------------------
+
 
 split("")       converts string to array of characters
+
+join("")        converts array back to string
 
 
 
