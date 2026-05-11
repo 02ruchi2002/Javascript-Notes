@@ -6,6 +6,8 @@ _________________________________  Time Complexity  ____________________________
 
 “Time complexity helps us analyze the efficiency of an algorithm for large inputs.”
 
+“It is usually written using Big O notation.”
+
 
 
 Time Complexity Of Different 
