@@ -116,3 +116,14 @@ Fixed size (in many languages)
 Resizing is costly
 Linked List:
 Dynamic size (grow/shrink easily)
+
+
+
+Linked list
+
+https://chatgpt.com/c/6a1bde0e-78a4-83a4-ab5d-f390bf79152d
+
+
+Binary search
+
+https://chatgpt.com/c/6a1d462f-195c-8320-8365-c0e897269b7a

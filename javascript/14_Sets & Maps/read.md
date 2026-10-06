@@ -33,10 +33,10 @@ letters.delete("b")
 
 4. has(value)        true/false
 
-letters.has("c")
+letters.has("c") 
 
 
-5. clear()	Removes all values
+5. leetters.clear()	Removes all values
 
 
 6. keys()
@@ -47,6 +47,11 @@ letters.has("c")
 
 
 ______________________________________Map_____________{Object}____________________________________________________
+
+
+“ A JavaScript Map is an object that can store collections of key-value pairs where each key is unique.”
+
+keys can be of any data type
 
 
 const fruits = new Map();

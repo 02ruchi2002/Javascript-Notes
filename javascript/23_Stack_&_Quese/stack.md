@@ -199,3 +199,46 @@ console.log(stack)
 
 
 <!-- https://chatgpt.com/c/69ef69ad-cf7c-8321-a5d2-ab62bcebf235 -->
+
+
+_________________________________________________FUNCTION CONSTRUCTOR___________________________________________________________
+
+
+const MyStack = function() {
+    this.stack = [];
+};
+
+
+MyStack.prototype.push = function(x) {
+    this.stack.push(x);
+};
+
+
+MyStack.prototype.pop = function() {
+    return this.stack.pop();
+};
+
+
+MyStack.prototype.peek = function() {
+    return this.stack[this.stack.length - 1];
+};
+
+
+MyStack.prototype.isEmpty = function() {
+    return this.stack.length === 0;
+};
+
+
+  const obj = new MyStack()
+  obj.push(10)
+  obj.push(20)
+  obj.push(30)
+  obj.push(40)
+
+  let param_2 = obj.pop()
+  let param_3 = obj.peek()
+  let param_4 = obj.empty()
+  
+  console.log(param_2)
+  console.log(param_3)
+  console.log(param_4)

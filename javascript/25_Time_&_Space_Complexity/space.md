@@ -70,9 +70,8 @@ Space complexity includes:
 
 i)   Variables
 ii)  Arrays
-iii)  Objects
+iii) Objects
 iv)  Function call stack (recursion)
-
 
 
 

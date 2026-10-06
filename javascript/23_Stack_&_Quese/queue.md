@@ -64,3 +64,50 @@ queue1.get_first_ele()
 
 
 console.log(queue1.q)
+
+
+
+_________________________________________________FUNCTION CONSTRUCTOR___________________________________________________________
+
+
+
+
+const MyQueue = function() {
+    this.queue = [];
+};
+
+
+MyQueue.prototype.enQueue = function(x) {
+    this.queue.push(x);
+};
+
+
+MyQueue.prototype.deQueue = function() {
+    return this.stack.pop();
+};
+
+MyQueue.prototype.getFirtEle = function() {
+    return this.queue[0];
+};
+
+MyQueue.prototype.isEmpty = function() {
+    return this.queue.length === 0;
+};
+
+MyQueue.prototype.getSize = function() {
+    return this.queue.length;
+};
+
+
+  const obj = new MyQueue()
+  obj.push(10)
+  obj.push(20)
+  obj.push(30)
+  obj.push(40)
+  let param_2 = obj.pop()
+  let param_3 = obj.peek()
+  let param_4 = obj.empty()
+  
+  console.log(param_2)
+  console.log(param_3)
+  console.log(param_4)
